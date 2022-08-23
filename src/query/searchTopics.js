@@ -9,7 +9,6 @@ export const SEARCH_TOPIC = gql`
           ... on Repository {
             resourcePath
             repositoryTopics(first: 10) {
-              totalCount
               nodes {
                 topic {
                   name

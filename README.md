@@ -1,12 +1,15 @@
 ## Dev Notes
 
-- I have used Apollo Client as through manege the state of the application
+- I have used Apollo Client as through manage the state of the application
 - Ant Design to use predefine component for UI
+- React-testing-library to create test cases for the application.
 
 ### How to run app & test
 
-- Do *npm install* to get all dependencies
-- Then do *npm start* to run project on local url
+- Run `npm install` to get all required dependencies installed.
+- Then run `npm start` to run project on localhost, i.e. *localhost:3000*
+- To run test cases, run `npm run test`, it will execute the unit tests on the terminal screen.
+  - It will show the results of the test when the test process get finished.
 
 ### Future Improvements
 
@@ -25,4 +28,3 @@ Feel free to elaborate on how you would improve any of the following topics
 - Additional Features:
   - Using typescripts in order to Tightly couple everything with graph ql.
   - Adding unit testing for test case
-  

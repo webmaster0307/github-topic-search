@@ -6,7 +6,7 @@ import { SearchBar, TopicDetails } from "./component";
 function App() {
   const [searchText, setSearchText] = useState("react");
 
-  const onSearch = text => {
+  const onSearch = (text) => {
     setSearchText(text);
   };
 
@@ -16,8 +16,10 @@ function App() {
         <Row justify="center">
           <Col span={20}>
             <SearchBar searchText={searchText} onSearch={onSearch} />
-            <div>
-              <h1>Topic Name: {searchText}</h1>
+            <div className="current-topic-wrapper">
+              <h1 className="current-topic">
+                Topic Name: &nbsp; <span>"{searchText}"</span>
+              </h1>
             </div>
             <TopicDetails
               searchText={searchText}

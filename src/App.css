@@ -1,11 +1,28 @@
+body {
+  background: #21272f !important;
+  height: 100vh;
+}
+
+html::-webkit-scrollbar {
+  display: none !important;
+}
 .App {
   display: flex;
   flex-direction: row;
+  background: #21272f;
+  height: 100vh;
 }
 .star_count {
+  font-weight: 600;
   font-size: 0.8rem;
   margin-left: 0.2rem;
-  color: green;
+  color: gold !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star_count > .related-topic {
+  color: white;
 }
 .topics_button {
   margin-left: 0.5rem;
@@ -14,4 +31,104 @@
 .main_container {
   width: 100%;
   margin-top: 1rem;
+}
+
+/* Header Styles */
+.header-container {
+  margin: 1rem;
+  /* background-color: #131417; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-input {
+  background-color: transparent !important;
+  color: white !important;
+  border-radius: 0.6rem 0rem 0rem 0.6rem !important;
+  display: flex;
+  align-items: center;
+  /* margin-right: 1rem;  */
+}
+
+.heading {
+  color: white;
+}
+.current-topic-wrapper {
+  margin: 1rem;
+}
+.current-topic {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.current-topic > span {
+  color: #00bd95;
+  margin: 0;
+}
+
+.ant-input:focus-within,
+.ant-input:hover {
+  border-color: #00bd95 !important;
+}
+.ant-input-group-addon {
+  background-color: transparent !important;
+}
+.ant-btn-primary {
+  background-color: #00bd95 !important;
+  border-color: #00bd95 !important;
+  border-radius: 0 0.6rem 0.6rem 0 !important;
+}
+
+/* Topics Container Styles */
+.topic-card {
+  margin: 1rem !important;
+  border-radius: 0.6rem !important;
+  /* box-shadow: 0 0 9px 2px #ffffff8a; */
+  background-color: #1314174b !important;
+  border: 1px solid #f0f0f047 !important;
+}
+.ant-card-head-title {
+  color: white;
+}
+.related-topics-heading {
+  color: white;
+}
+
+.ant-btn {
+  background-color: #00bd95 !important;
+  border: none !important;
+  font-weight: 600 !important;
+  text-transform: capitalize;
+}
+
+.ant-btn:hover {
+  color: black !important;
+  background-color: #73aea2 !important;
+}
+.loading-screen {
+  height: calc(100vh - 200px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+.ant-spin-dot-item {
+  background: #00bd95 !important;
+}
+.ant-spin-dot {
+  width: 1em;
+  height: 1em;
+}
+.ant-spin-lg .ant-spin-dot {
+  font-size: 50px !important;
+}
+.ant-spin-lg .ant-spin-dot i {
+  width: 40px !important;
+  height: 40px !important;
 }
